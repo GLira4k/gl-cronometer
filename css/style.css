@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --titleFont:'Bebas Neue', sans-serif;
+    --cronFont:'Orbitron', sans-serif;
+    --cor01:#1165D4;
+    --cor02:#0B4187;
+    --cor03:black;
+    --cor04: white;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    background-color: var(--cor04);
+    height: 100vh;
+}
+
+.container h1 {
+    font-family: var(--titleFont);
+    color: var(--cor01);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.302);
+}
+
+.timer{
+    display: flex;
+    flex-direction: row;
+    font-family: var(--cronFont);
+    font-size: 55px;
+    font-weight: bold;
+    color: var(--cor03);
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    min-width: 90px;
+}
+
+.separator{
+    padding: 0 10px; 
+}
+
+#milliseconds{
+    font-size: 30px;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight:bold;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+#startBtn{
+    background-color: var(--cor01);
+    color: var(--cor04);
+}
+
+#pauseBtn, 
+#resumeBtn{
+    display: none;
+}
+

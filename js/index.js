@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 const minutesEl = document.querySelector("#minutes");
 const secondsEl = document.querySelector("#seconds");
 const millisecondsEl = document.querySelector("#milliseconds");
@@ -15,24 +17,29 @@ let isPaused = false;
 startBtn.addEventListener("click", startTimer)
 
 function startTimer(){
+
     interval = setInterval(() => {
+
         if(!isPaused){
-            milliseconds += 10
+
+            milliseconds += 10;
 
             if(milliseconds === 1000){
-                seconds++
+                seconds++;
                 milliseconds = 0;
             };
 
             if(seconds === 60){
-                minutes++
+                minutes++;
                 seconds = 0;
             };
 
-            minutesEl.textContent = minutes
-            secondsEl.textContent = seconds
-            millisecondsEl.textContent = milliseconds
+            minutesEl.textContent = minutes;
+            secondsEl.textContent = seconds;
+            millisecondsEl.textContent = milliseconds;
         
         }
-    }, 10)
+    }, 10);
 }
+
+});

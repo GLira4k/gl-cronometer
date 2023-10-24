@@ -23,7 +23,7 @@
 
 nav{
     background-color: var(--cor01);
-    width: 99vw;
+    width: 98.5vw;
     height: 55px;
     display: flex;
     justify-content: space-around;
@@ -121,6 +121,7 @@ footer{
     height: 20vh;
     background-image: linear-gradient(0deg, rgba(11,65,135,1) 30%, rgb(15, 86, 179) 100%);;
     color: var(--cor05);
+    border-radius: 10px 10px 0 0;
 }
 
 .social-media{

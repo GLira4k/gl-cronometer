@@ -10,13 +10,28 @@
 }
 
 :root{
-    --titleFont:'Bebas Neue', sans-serif;
+    --titleFont:'Roboto', sans-serif;
     --cronFont:'Orbitron', sans-serif;
     --cor01:#1165D4;
     --cor02:#0B4187;
     --cor03:black;
     --cor04: white;
 
+}
+
+
+nav{
+    background-color: var(--cor01);
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav h1 {
+    font-family: var(--titleFont);
+    color: var(--cor04);
 }
 
 .container{
@@ -29,19 +44,26 @@
     height: 100vh;
 }
 
-.container h1 {
-    font-family: var(--titleFont);
-    color: var(--cor01);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.302);
+.timer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vh;
+    width: 470px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.047);
 }
 
 .timer{
     display: flex;
     flex-direction: row;
     font-family: var(--cronFont);
-    font-size: 55px;
+    font-size: 60px;
     font-weight: bold;
     color: var(--cor03);
+    padding-top: 30px;
 }
 
 .time{
@@ -69,14 +91,14 @@
     padding: 10px 20px;
     font-size: 18px;
     font-weight:bold;
-    border-radius: 30px;
+    border-radius: 5px;
     cursor: pointer;
     border: 1px solid #ccc;
     transition: all .2s ease-in-out;
 }
 
 .btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 #startBtn{

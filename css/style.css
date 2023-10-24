@@ -16,13 +16,14 @@
     --cor02:#0B4187;
     --cor03:black;
     --cor04: white;
+    --cor05:rgb(232, 232, 232);
 
 }
 
 
 nav{
     background-color: var(--cor01);
-    width: 100vw;
+    width: 99vw;
     height: 55px;
     display: flex;
     justify-content: space-around;
@@ -51,7 +52,8 @@ nav h1 {
     justify-content: space-around;
     height: 30vh;
     width: 470px;
-    background-color: rgb(232, 232, 232);
+    margin-top: 30px;
+    background-color: var(--cor05);
     border-radius: 4px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.047);
 }
@@ -109,5 +111,30 @@ nav h1 {
 #pauseBtn, 
 #resumeBtn{
     display: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    background-image: linear-gradient(0deg, rgba(11,65,135,1) 30%, rgb(15, 86, 179) 100%);;
+    color: var(--cor05);
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10vw;
+}
+.icons{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    
 }
 
